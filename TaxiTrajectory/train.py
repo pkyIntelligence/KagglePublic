@@ -14,12 +14,6 @@ pd.set_option('display.width', 200)
 
 data_dir = '/kaggle/input/taxitesth5/'
 
-
-# test_df = pd.read_csv(input_dir + 'test.csv')
-# sample_sub_df = pd.read_csv(input_dir + 'sampleSubmission.csv')
-# ERROR in taxistand data, fixing manually
-
-
 class TaxiModel(Model):
 
     def __init__(self, emb_szs, n_cont, n_dest_clusters):
