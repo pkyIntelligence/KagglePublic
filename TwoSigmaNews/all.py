@@ -26,7 +26,6 @@ def normalizeNews(market_df, news_df):
     return news_df.merge(ac_split_df, left_index=True, right_index=True, copy=False)
 
 
-# TODO: build model on training data
 def make_random_predictions(predictions_df):
     predictions_df.confidenceValue = 2.0 * np.random.rand(len(predictions_df)) - 1.0
 
