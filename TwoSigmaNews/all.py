@@ -1,11 +1,8 @@
 import numpy as np
 import pandas as pd
-import cProfile
 import xarray as xr
 from keras.models import Sequential
 from keras.layers import BatchNormalization, Dense, Activation, Dropout, GRU, TimeDistributed
-
-cp = cProfile.Profile()
 
 from kaggle.competitions import twosigmanews
 
